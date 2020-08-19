@@ -21,6 +21,8 @@ class CrearTablaUsuarioRol extends Migration
             $table->foreign('IdUsuario','fk_UsuarioRol_Usuario')->references('IdUsuario')->on('usuarios')->onDelete('restrict')->onUpdate('restrict');
             $table->boolean('Estado');
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 

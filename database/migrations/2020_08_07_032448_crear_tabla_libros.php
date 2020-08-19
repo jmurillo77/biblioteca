@@ -22,6 +22,8 @@ class CrearTablaLibros extends Migration
             $table->string('Editorial', 50)->nullable();
             $table->string('Foto',100)->nullable();
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 
