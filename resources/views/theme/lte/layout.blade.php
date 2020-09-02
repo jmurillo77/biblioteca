@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@yield('Titulo','Dashboard') | Fianzr</title>
+    <title>@yield('TituloPagina','Dashboard') | Fianzr</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="{{asset("assets/$theme/plugins/daterangepicker/daterangepicker.css")}}">
     <!-- summernote -->
     <link rel="stylesheet" href="{{asset("assets/$theme/plugins/summernote/summernote-bs4.css")}}">
-
+    <link rel="stylesheet" href="{{asset("assets/css/custom.css")}}">
     @yield('styles')
     
     <!-- Google Font: Source Sans Pro -->

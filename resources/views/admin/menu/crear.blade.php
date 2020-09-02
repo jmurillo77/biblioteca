@@ -1,0 +1,30 @@
+@extends("theme.$theme.layout")
+@section('Titulo')
+    Menu
+@endsection
+
+@section('contenido')
+<div class="row">
+    <div class="col-12">
+        @include('includes.form-error')
+        @include('includes.mensaje')
+        <div class="card card-info">
+            <div class="card-header">
+                <h3 class="card-title">Crear Menús</h3>
+            </div>
+            <!-- form start -->
+            <form action="{{route('menu_guardar')}}" id="form-general" class="form-horizontal" method="POST">
+                @csrf
+                <div class="card-body">
+                    @include('admin.menu.form')
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer text-center">
+                    @include('includes.boton-form-crear')
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+  <!-- /.row -->
+@endsection
