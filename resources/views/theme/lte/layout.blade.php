@@ -101,9 +101,10 @@
 <script src="{{asset("assets/$theme/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js")}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset("assets/$theme/dist/js/adminlte.js")}}"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{asset("assets/$theme/dist/js/pages/dashboard.js")}}"></script>
-
+<!-- JQuery Validation -->
+<script src="{{asset("assets/js/jquery-validation/jquery.validate.min.js")}}"></script>
+<script src="{{asset("assets/js/jquery-validation/localization/messages_es.min.js")}}"></script>
+<script src="{{asset("assets/js/funciones.js")}}"></script>
 
 @yield('scripts')
 
